@@ -13,8 +13,8 @@ const Ingredients = () => {
   }
 
   const onRemoveItemHandler = (id) => {
-    let newUserIngredients = userIngredients.filter(userIngredient => userIngredient.id !== id)
-    setUserIngredients(newUserIngredients);
+    // let newUserIngredients = userIngredients.filter(userIngredient => userIngredient.id !== id)
+    setUserIngredients(preUserIngredients => preUserIngredients.filter(userIngredient => userIngredient.id !== id));
   }
 
   return (
